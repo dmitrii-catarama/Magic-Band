@@ -1,0 +1,24 @@
+
+fisierul banda.h
+In primul rand am facut banda si operatiile caracteristice ei. 
+Structura benzii e formata din deget, santinela si pointer
+la ultimul nod din lista. Lista e dublu inlantuita din cauza asta am
+facut o structura numita BandaNode pentru ca sa pot retine
+pointer la nodul urmator si la cel anterior.
+Am facut definirea a doua tipuri de date, T care e pentru char 
+si D care e pentru pointer de char
+facut special ca sa pot face memorarea stringurilor de comenzi in
+coada cu comenzi. Am facut operatiile necesare de implrementat in 
+functii diferite, pentru ca sa fac claritate in cod) La pasul urmator
+am implementat coada unde sa retin comenzile citite din fisier si am 
+implementat o stiva pentru operatii de UNDO si REDO. Ulterior am scris functia
+EXECUTE in care am pus comparatia de stringuri extrase din coada cu comenzi.
+Atunci cand stringurile erau identice se executa functia caracteristica acelui
+string.
+
+fisierul tema1.c
+Aici am implementat deschiderea fisierului de input si a celui de output,
+respectiv inchiderea acestora. Am folosit aceeasi comparatie de stringuri ca 
+si la functia de EXECUTE, pentru ca sa stiu ce comenzi pu in coada cu Commenzi.
+La sfirsitul executiei programului nu am uitat sa fac free la memorie alocata
+pentru stive, banda, coada cu comenzi si nodurile acestora.
