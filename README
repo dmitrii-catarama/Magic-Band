@@ -1,10 +1,10 @@
-*************
+--------------------------------------
 Rezumat proiect:
 Dorim sa avem o banda in care pastram diferite obiecte si putem
 executa operatii asupra acesteia cum ar fi UPDATE, QUERY, UNDO
 REDO, EXECUTE, MOVE_LEFT, MOVE_RIGHT, INSERT_RIGHT, INSERT_LEFT. 
-Proiect testat cu __Valgrind__.
-**************
+Proiect testat cu **Valgrind**.
+---------------------------------------
 
 fisierul banda.h
 In primul rand am facut banda si operatiile caracteristice ei. 
