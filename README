@@ -1,17 +1,24 @@
+*************
+Rezumat proiect:
+Dorim sa avem o banda in care pastram diferite obiecte si putem
+executa operatii asupra acesteia cum ar fi UPDATE, QUERY, UNDO
+REDO, EXECUTE, MOVE_LEFT, MOVE_RIGHT, INSERT_RIGHT, INSERT_LEFT. 
+Proiect testat cu **Valgrind**.
+**************
 
 fisierul banda.h
 In primul rand am facut banda si operatiile caracteristice ei. 
 Structura benzii e formata din deget, santinela si pointer
-la ultimul nod din lista. Lista e dublu inlantuita din cauza asta am
+la ultimul nod din lista. **Lista e dublu inlantuita** din cauza asta am
 facut o structura numita BandaNode pentru ca sa pot retine
 pointer la nodul urmator si la cel anterior.
 Am facut definirea a doua tipuri de date, T care e pentru char 
 si D care e pentru pointer de char
 facut special ca sa pot face memorarea stringurilor de comenzi in
-coada cu comenzi. Am facut operatiile necesare de implrementat in 
-functii diferite, pentru ca sa fac claritate in cod) La pasul urmator
-am implementat coada unde sa retin comenzile citite din fisier si am 
-implementat o stiva pentru operatii de UNDO si REDO. Ulterior am scris functia
+coada cu comenzi. Operatiile necesare le-am implementat in 
+functii diferite, pentru ca sa fac claritate in cod. La pasul urmator
+am implementat **coada** unde sa retin comenzile citite din fisier si am 
+implementat o **stiva** pentru operatii de UNDO si REDO. Ulterior am scris functia
 EXECUTE in care am pus comparatia de stringuri extrase din coada cu comenzi.
 Atunci cand stringurile erau identice se executa functia caracteristica acelui
 string.
